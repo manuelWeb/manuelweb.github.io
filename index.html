@@ -1,40 +1,141 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+  <title>Démo Github Copilot</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/sky.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <section>
+          <h2>Démo Github Copilot</h2>
+        </section>
+        <section>
+          <h2>Qu'est-ce que Github Copilot ?</h2>
+          <p>GitHub Copilot est une extension pour Visual Studio Code qui vous aide à écrire du code plus rapidement.
+          </p>
+        </section>
+        <section>
+          <h2>Comment fonctionne Github Copilot ?</h2>
+          <p>GitHub Copilot est basé sur Codex, un modèle de langage généré par OpenAI. Il fonctionne en analysant le
+            code que vous écrivez et en générant des suggestions de code en temps réel.</p>
+        </section>
+        <section>
+          <h2>Installation et coût de GitHub Copilot</h2>
+          <p>GitHub Copilot est une extension gratuite pour Visual Studio Code. Vous pouvez l'installer directement
+            depuis le Marketplace de Visual Studio Code.</p>
+          <p>Pour l'installer :</p>
+          <ol>
+            <li>Ouvrez Visual Studio Code.</li>
+            <li>Cliquez sur l'icône des extensions dans la barre latérale gauche (ou utilisez le raccourci `Cmd+Shift+X`
+              sur Mac).</li>
+            <li>Dans la barre de recherche des extensions, tapez "GitHub Copilot".</li>
+            <li>Cliquez sur le bouton "Installer".</li>
+          </ol>
+          <p>Une fois installé, GitHub Copilot est activé par défaut et commencera à fournir des suggestions de code
+            automatiquement.</p>
+        </section>
+
+        <section>
+          <h2>Gratuit ?</h2>
+
+          <ul>
+            <Li class="fragment" data-fragment-index="1">Oui mais pas vraiment.</Li>
+            <Li class="fragment" data-fragment-index="2">Free for verified students, teachers, and maintainers of
+              popular open source projects.
+            </Li>
+            <Li class="fragment" data-fragment-index="3"> Mais ça reste raisonnable : $100 USD per year </Li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Exemple de code généré
+
+            ```javascript
+            // Crée une fonction qui prend un tableau de nombres et renvoie la somme de ces nombres.
+
+            function sumArray(numbers) {
+              return numbers.reduce((acc, num) => acc + num, 0);
+            }
+            ```
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Exemple de génération JSON
+
+            ### Prompt :
+
+            génère un objet json qui décrit des clients de site e-commerce avec pour chacun un identifiant, un nom, un email et une liste de commandes contenant chacune un identifiant de commande, un produit et une quantité.
+
+            Demander à Copilot ⌘ + i  <!-- .element: class="fragment" data-fragment-index="1" -->
+
+            À tester sur le fichier generate-mok.json  <!-- .element: class="fragment" data-fragment-index="2" -->
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Création fonctions exports nommés
+
+            ### Prompt :
+
+            écrit une fonction sum, une fonction multiply, une fonction divide et exporte les trois fonctions via export fonction de façon nommée
+
+            Demander à Copilot ⌘ + i  <br/>fichier math.js <!-- .element: class="fragment" data-fragment-index="1" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Demander à Copilot d'importer des modules qui ne sont pas dans le dossier courant
+
+            Copilot en tant qu'IA ne peut pas accéder à des fichiers qui ne sont pas dans le dossier courant. Cependant, vous pouvez lui demander d'importer des modules qui ne sont pas dans le dossier courant en lui fournissant le chemin relatif du fichier.
+
+            Demander à Copilot ⌘ + i : <!-- .element: class="fragment" data-fragment-index="1" -->
+
+            importer sum, multiply, divide depuis le fichier lambda-fn/math.js et utilise les chacune <br/> fichier useImport.js  <!-- .element: class="fragment" data-fragment-index="2" -->
+          </textarea>
+        </section>
+
+
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      width: 1710,
+      height: 1107,
+    });
+  </script>
+</body>
+
 </html>
