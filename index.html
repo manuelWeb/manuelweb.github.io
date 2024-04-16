@@ -7,10 +7,8 @@
 
   <title>Démo Github Copilot</title>
   <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png"
-    href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml"
-    href="https://github.githubassets.com/favicons/favicon.svg">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
 
 
   <link rel="stylesheet" href="dist/reset.css">
@@ -51,13 +49,13 @@
             depuis le Marketplace de Visual Studio Code.</p>
           <p>Pour l'installer :</p>
           <ol>
-            <li>Ouvrez Visual Studio Code.</li>
-            <li>Cliquez sur l'icône des extensions dans la barre latérale gauche (ou utilisez le raccourci `Cmd+Shift+X`
+            <li class="fragment" data-fragment-index="1">Ouvrez Visual Studio Code.</li>
+            <li class="fragment" data-fragment-index="2">Cliquez sur l'icône des extensions dans la barre latérale gauche (ou utilisez le raccourci `Cmd+Shift+X`
               sur Mac).</li>
-            <li>Dans la barre de recherche des extensions, tapez "GitHub Copilot".</li>
-            <li>Cliquez sur le bouton "Installer".</li>
+            <li class="fragment" data-fragment-index="3">Dans la barre de recherche des extensions, tapez "GitHub Copilot".</li>
+            <li class="fragment" data-fragment-index="4">Cliquez sur le bouton "Installer".</li>
           </ol>
-          <p>Une fois installé, GitHub Copilot est activé par défaut et commencera à fournir des suggestions de code
+          <p class="fragment" data-fragment-index="4">Une fois installé, GitHub Copilot est activé par défaut et commencera à fournir des suggestions de code
             automatiquement.</p>
         </section>
 
@@ -73,14 +71,16 @@
         </section>
 
         <section>
-          <h2>Gratuit ?</h2>
+          <h2>Copilot est gratuit ?</h2>
 
           <ul>
-            <Li class="fragment" data-fragment-index="1">Oui mais pas vraiment.</Li>
-            <Li class="fragment" data-fragment-index="2">Free for verified students, teachers, and maintainers of
-              popular open source projects.
+            <Li class="fragment" data-fragment-index="1">Oui enfin <a href="https://docs.github.com/fr/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot#%C3%A0-propos-de-la-facturation-pour-github-copilot" target="_blank">pas vraiment</a><br /> → essai à usage unique de 30 jours pour l'évaluer</Li>
+            <Li class="fragment" data-fragment-index="2">
+              Gratuit pour les étudiants vérifiés, les professeurs et les mainteneurs de projets open source populaires.
             </Li>
-            <Li class="fragment" data-fragment-index="3"> Mais ça reste raisonnable : $100 USD per year </Li>
+            <Li class="fragment" data-fragment-index="3">
+              Mais ça reste raisonnable : 95€ par an.
+            </Li>
           </ul>
         </section>
       </section>
@@ -197,7 +197,7 @@
     Reveal.initialize({
       hash: true,
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
       width: 1710,
       height: 1107,
     });
