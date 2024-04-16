@@ -1,3 +1,29 @@
+# projet
+
+## NVM
+
+### Changer la node -v avec cd rep
+
+> Le fichier .nvmrc est un fichier qui contient la version de Node.js à utiliser dans un projet. Il est utilisé par nvm pour changer de version de Node.js lorsque vous entrez dans un répertoire.
+
+Ajouter ce code dans le fichier .bashrc ou .zshrc
+
+```bash
+# Fonction pour changer de version Node.js en utilisant .nvmrc
+nvm_auto_switch() {
+  if [[ -f ".nvmrc" ]]; then
+    nvm use
+  fi
+}
+
+# Appeler la fonction lorsque vous entrez dans un répertoire
+cd() {
+  builtin cd "$@" && nvm_auto_switch
+}
+```
+
+# reveal.js
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
@@ -18,6 +44,7 @@ Want to create reveal.js presentation in a graphical editor? Try <https://slides
 ---
 
 ### Sponsors
+
 Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
 <div align="center">
   <table>
@@ -38,13 +65,14 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 ---
 
 ### Getting started
+
 - 🚀 [Install reveal.js](https://revealjs.com/installation)
 - 👀 [View the demo presentation](https://revealjs.com/demo)
 - 📖 [Read the documentation](https://revealjs.com/markup/)
 - 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
 - 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
 
---- 
+---
 <div align="center">
   MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
 </div>
