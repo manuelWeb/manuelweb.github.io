@@ -1,4 +1,37 @@
-# projet
+# Présentation Github copilot Domoti 2024
+
+## Supports de présentation
+  1. Slides générées par reveal-js
+  2. fichiers pour démonstration code live dans le dossier ../copilot-live
+
+### Les slides
+
+> Les slides sont disponible au format github-pages. Cette présentation est ouverte à la modification.
+
+#### Démarrer les Slides en mode développement (nvm use 18)
+> Pour modifier - ajouter des slides
+
+```bash
+npm i
+npm start
+# Server started http://localhost:8000 livereload 🎉
+```
+
+#### Accès aux slides
+
+Accéder aux slides via gh-pages → ton browser préféré → Goto [manuelweb.github.io](https://manuelweb.github.io/)
+
+#### collaborer 🙏 deux solutions :
+Prérequis un compte Github
+1. fork + Pull request
+2. passe moi ton compte Github je t'envoi une invitation
+
+### La démo live
+
+> fichiers js - ts pour du live coding. Les démos sont listé au fil les slides
+
+
+# Tech note
 
 ## NVM
 
