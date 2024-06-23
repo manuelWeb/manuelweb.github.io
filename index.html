@@ -7,8 +7,10 @@
 
   <title>Démo Github Copilot</title>
   <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png"
+    href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml"
+    href="https://github.githubassets.com/favicons/favicon.svg">
 
 
   <link rel="stylesheet" href="dist/reset.css">
@@ -27,19 +29,35 @@
         <section>
           <h2>Démo Github Copilot</h2>
           <p>
-            site web : <a href="https://copilot.github.com/">copilot.github.com</a>
+            L'outil de développement assisté par IA le plus largement adopté au monde.
+            <br>
+            site web : <a href="https://copilot.github.com/" target="_blank">copilot.github.com</a>
           </p>
         </section>
         <section>
           <h2>Qu'est-ce que Github Copilot ?</h2>
-          <p>GitHub Copilot est une extension pour Visual Studio Code qui vous aide à écrire du code plus rapidement.
+          <p style="text-align: left;">
+            GitHub Copilot est une extension pour Visual Studio Code qui vous aide à écrire du code plus rapidement et
+            plus efficacement.<br>
+            Alimenté par des modèles d'intelligence artificielle développés par OpenAI, Copilot
+            analyse le contexte de votre code et vous propose des complétions de code, des suggestions et des
+            améliorations en temps réel.<br>
+            Il peut suggérer des lignes de code individuelles, des fonctions complètes, ou
+            même des blocs entiers de code, ce qui permet de réduire le temps passé sur les tâches répétitives et
+            d'augmenter votre productivité.<br>
+            En plus de supporter une large variété de langages de programmation, GitHub
+            Copilot apprend et s'adapte à votre style de codage au fil du temps, rendant vos sessions de codage plus
+            fluides et intuitives.
           </p>
         </section>
 
         <section>
           <h2>Comment fonctionne Github Copilot ?</h2>
-          <p>GitHub Copilot est basé sur Codex, un modèle de langage généré par OpenAI. Il fonctionne en analysant le
-            code que vous écrivez et en générant des suggestions de code en temps réel.</p>
+          <p>
+            GitHub Copilot est basé sur Codex, un modèle de langage généré par OpenAI.<br>
+            Il fonctionne en analysant le
+            code que vous écrivez et en générant des suggestions de code en temps réel.
+          </p>
         </section>
 
         <!-- installation -->
@@ -50,12 +68,15 @@
           <p>Pour l'installer :</p>
           <ol>
             <li class="fragment" data-fragment-index="1">Ouvrez Visual Studio Code.</li>
-            <li class="fragment" data-fragment-index="2">Cliquez sur l'icône des extensions dans la barre latérale gauche (ou utilisez le raccourci `Cmd+Shift+X`
-              sur Mac).</li>
-            <li class="fragment" data-fragment-index="3">Dans la barre de recherche des extensions, tapez "GitHub Copilot".</li>
+            <li class="fragment" data-fragment-index="2">Cliquez sur l'icône des extensions dans la barre latérale
+              gauche (ou utilisez le raccourci `Cmd+Shift+X`
+              sur Mac, pour Windows utiliser Ctrl à la place de Cmd).</li>
+            <li class="fragment" data-fragment-index="3">Dans la barre de recherche des extensions, tapez "GitHub
+              Copilot".</li>
             <li class="fragment" data-fragment-index="4">Cliquez sur le bouton "Installer".</li>
           </ol>
-          <p class="fragment" data-fragment-index="4">Une fois installé, GitHub Copilot est activé par défaut et commencera à fournir des suggestions de code
+          <p class="fragment" data-fragment-index="4">Une fois installé, GitHub Copilot est activé par défaut et
+            commencera à fournir des suggestions de code
             automatiquement.</p>
         </section>
 
@@ -66,8 +87,10 @@
             Pour s'assurer que Copilot est correctement installé et fonctionne,
             utilisez le raccourci clavier `Cmd+Shift+P` pour ouvrir la palette de commandes de Visual Studio Code,
             puis tapez "GitHub Copilot" pour voir les commandes disponibles.
-            Ou cliquez sur l'icon en bas à droite de l'éditeur → <svg xmlns="http://www.w3.org/2000/svg" width="1.24em" height="1em" viewBox="0 0 256 208">
-              <path d="M205.28 31.36c14.096 14.88 20.016 35.2 22.512 63.68c6.626 0 12.805 1.47 16.976 7.152l7.792 10.56A17.548 17.548 0 0 1 256 123.2v28.688c-.008 3.704-1.843 7.315-4.832 9.504C215.885 187.222 172.35 208 128 208c-49.066 0-98.19-28.273-123.168-46.608c-2.989-2.189-4.825-5.8-4.832-9.504V123.2c0-3.776 1.2-7.424 3.424-10.464l7.792-10.544c4.173-5.657 10.38-7.152 16.992-7.152c2.496-28.48 8.4-48.8 22.512-63.68C77.331 3.165 112.567.06 127.552 0H128c14.72 0 50.4 2.88 77.28 31.36m-77.264 47.376c-3.04 0-6.544.176-10.272.544c-1.312 4.896-3.248 9.312-6.08 12.128c-11.2 11.2-24.704 12.928-31.936 12.928c-6.802 0-13.927-1.42-19.744-5.088c-5.502 1.808-10.786 4.415-11.136 10.912c-.586 12.28-.637 24.55-.688 36.824c-.026 6.16-.05 12.322-.144 18.488c.024 3.579 2.182 6.903 5.44 8.384C79.936 185.92 104.976 192 128.016 192c23.008 0 48.048-6.08 74.512-18.144c3.258-1.48 5.415-4.805 5.44-8.384c.317-18.418.062-36.912-.816-55.312h.016c-.342-6.534-5.648-9.098-11.168-10.912c-5.82 3.652-12.927 5.088-19.728 5.088c-7.232 0-20.72-1.728-31.936-12.928c-2.832-2.816-4.768-7.232-6.08-12.128a106.26 106.26 0 0 0-10.24-.544m-26.941 43.93c5.748 0 10.408 4.66 10.408 10.409v19.183c0 5.749-4.66 10.409-10.408 10.409c-5.748 0-10.408-4.66-10.408-10.409v-19.183c0-5.748 4.66-10.408 10.408-10.408m53.333 0c5.749 0 10.409 4.66 10.409 10.409v19.183c0 5.749-4.66 10.409-10.409 10.409c-5.748 0-10.408-4.66-10.408-10.409v-19.183c0-5.748 4.66-10.408 10.408-10.408M81.44 28.32c-11.2 1.12-20.64 4.8-25.44 9.92c-10.4 11.36-8.16 40.16-2.24 46.24c4.32 4.32 12.48 7.2 21.28 7.2c6.72 0 19.52-1.44 30.08-12.16c4.64-4.48 7.52-15.68 7.2-27.04c-.32-9.12-2.88-16.64-6.72-19.84c-4.16-3.68-13.6-5.28-24.16-4.32m68.96 4.32c-3.84 3.2-6.4 10.72-6.72 19.84c-.32 11.36 2.56 22.56 7.2 27.04c10.56 10.72 23.36 12.16 30.08 12.16c8.8 0 16.96-2.88 21.28-7.2c5.92-6.08 8.16-34.88-2.24-46.24c-4.8-5.12-14.24-8.8-25.44-9.92c-10.56-.96-20 .64-24.16 4.32M128 56c-2.56 0-5.6.16-8.96.48c.32 1.76.48 3.68.64 5.76c0 1.44 0 2.88-.16 4.48c3.2-.32 5.92-.32 8.48-.32c2.56 0 5.28 0 8.48.32c-.16-1.6-.16-3.04-.16-4.48c.16-2.08.32-4 .64-5.76c-3.36-.32-6.4-.48-8.96-.48" />
+            Ou cliquez sur l'icon en bas à droite de l'éditeur → <svg xmlns="http://www.w3.org/2000/svg" width="1.24em"
+              height="1em" viewBox="0 0 256 208">
+              <path
+                d="M205.28 31.36c14.096 14.88 20.016 35.2 22.512 63.68c6.626 0 12.805 1.47 16.976 7.152l7.792 10.56A17.548 17.548 0 0 1 256 123.2v28.688c-.008 3.704-1.843 7.315-4.832 9.504C215.885 187.222 172.35 208 128 208c-49.066 0-98.19-28.273-123.168-46.608c-2.989-2.189-4.825-5.8-4.832-9.504V123.2c0-3.776 1.2-7.424 3.424-10.464l7.792-10.544c4.173-5.657 10.38-7.152 16.992-7.152c2.496-28.48 8.4-48.8 22.512-63.68C77.331 3.165 112.567.06 127.552 0H128c14.72 0 50.4 2.88 77.28 31.36m-77.264 47.376c-3.04 0-6.544.176-10.272.544c-1.312 4.896-3.248 9.312-6.08 12.128c-11.2 11.2-24.704 12.928-31.936 12.928c-6.802 0-13.927-1.42-19.744-5.088c-5.502 1.808-10.786 4.415-11.136 10.912c-.586 12.28-.637 24.55-.688 36.824c-.026 6.16-.05 12.322-.144 18.488c.024 3.579 2.182 6.903 5.44 8.384C79.936 185.92 104.976 192 128.016 192c23.008 0 48.048-6.08 74.512-18.144c3.258-1.48 5.415-4.805 5.44-8.384c.317-18.418.062-36.912-.816-55.312h.016c-.342-6.534-5.648-9.098-11.168-10.912c-5.82 3.652-12.927 5.088-19.728 5.088c-7.232 0-20.72-1.728-31.936-12.928c-2.832-2.816-4.768-7.232-6.08-12.128a106.26 106.26 0 0 0-10.24-.544m-26.941 43.93c5.748 0 10.408 4.66 10.408 10.409v19.183c0 5.749-4.66 10.409-10.408 10.409c-5.748 0-10.408-4.66-10.408-10.409v-19.183c0-5.748 4.66-10.408 10.408-10.408m53.333 0c5.749 0 10.409 4.66 10.409 10.409v19.183c0 5.749-4.66 10.409-10.409 10.409c-5.748 0-10.408-4.66-10.408-10.409v-19.183c0-5.748 4.66-10.408 10.408-10.408M81.44 28.32c-11.2 1.12-20.64 4.8-25.44 9.92c-10.4 11.36-8.16 40.16-2.24 46.24c4.32 4.32 12.48 7.2 21.28 7.2c6.72 0 19.52-1.44 30.08-12.16c4.64-4.48 7.52-15.68 7.2-27.04c-.32-9.12-2.88-16.64-6.72-19.84c-4.16-3.68-13.6-5.28-24.16-4.32m68.96 4.32c-3.84 3.2-6.4 10.72-6.72 19.84c-.32 11.36 2.56 22.56 7.2 27.04c10.56 10.72 23.36 12.16 30.08 12.16c8.8 0 16.96-2.88 21.28-7.2c5.92-6.08 8.16-34.88-2.24-46.24c-4.8-5.12-14.24-8.8-25.44-9.92c-10.56-.96-20 .64-24.16 4.32M128 56c-2.56 0-5.6.16-8.96.48c.32 1.76.48 3.68.64 5.76c0 1.44 0 2.88-.16 4.48c3.2-.32 5.92-.32 8.48-.32c2.56 0 5.28 0 8.48.32c-.16-1.6-.16-3.04-.16-4.48c.16-2.08.32-4 .64-5.76c-3.36-.32-6.4-.48-8.96-.48" />
             </svg>
           </p>
         </section>
@@ -76,11 +99,18 @@
           <h2>Copilot est gratuit ?</h2>
 
           <ul>
-            <Li class="fragment" data-fragment-index="1">Oui enfin <a href="https://docs.github.com/fr/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot#%C3%A0-propos-de-la-facturation-pour-github-copilot" target="_blank">pas vraiment</a><br /> → essai à usage unique de 30 jours pour l'évaluer</Li>
+            <Li class="fragment" data-fragment-index="1">
+              Oui enfin <a
+                href="https://docs.github.com/fr/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot#%C3%A0-propos-de-la-facturation-pour-github-copilot"
+                target="_blank">presque…</a>
+            </Li>
             <Li class="fragment" data-fragment-index="2">
-              Gratuit pour les étudiants vérifiés, les professeurs et les mainteneurs de projets open source populaires.
+              Essai à usage unique de 30 jours pour l'évaluer 🏃🏻‍♂️
             </Li>
             <Li class="fragment" data-fragment-index="3">
+              Gratuit pour les étudiants vérifiés, les professeurs et les mainteneurs de projets open source populaires.
+            </Li>
+            <Li class="fragment" data-fragment-index="4">
               Mais ça reste raisonnable : 95€ par an.
             </Li>
           </ul>
@@ -90,12 +120,16 @@
       <section>
         <section data-markdown>
           <textarea data-template>
-            ## Exemple de code généré
+            ## Ok, on est là pour une démo 🚀
+            Allons-y testons quelques prompts pour voir ce que Copilot a dans le ventre !
 
-            ```javascript
-            // Crée une fonction qui prend un tableau de nombres et renvoie la somme de ces nombres.
+            <small>copilot-live/1.0_simple-function.js</small>
 
-            function sumArray(numbers) {
+            ```javascript [1|2|3-6]
+            // Crée une fonction "sum" qui prend un tableau de nombres et renvoie la somme de ces nombres
+            // utilise reduce
+            // Tadaaa ! 🎉
+            function sum(numbers) {
               return numbers.reduce((acc, num) => acc + num, 0);
             }
             ```
@@ -104,28 +138,37 @@
 
         <section data-markdown>
           <textarea data-template>
-            ## Exemple de génération JSON
+            ## TITILLON DU JSON
 
-            ### Prompt :
+            Je veux utiliser un mok mais j'ai la flemme (ou pas le temps) de le créer 🥱 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-            génère un objet json qui décrit des clients de site e-commerce avec pour chacun un identifiant, un nom, un email et une liste de commandes contenant chacune un identifiant de commande, un produit et une quantité.
+            Prompt : "génère un objet json qui décrit des clients pour un site e-commerce avec pour chacun un identifiant, un nom, un email et une liste de commandes contenant chacune un identifiant de commande, un produit et une quantité" <!-- .element: class="fragment" data-fragment-index="2" -->
 
-            Demander à Copilot ⌘ + i  <!-- .element: class="fragment" data-fragment-index="1" -->
+            <small>copilot-live/fichier 1.1_generate-mok.json</small> <!-- .element: class="fragment" data-fragment-index="3" -->
 
-            À tester sur le fichier generate-mok.json  <!-- .element: class="fragment" data-fragment-index="2" -->
+            Demander à Copilot ⌘ + i  <!-- .element: class="fragment" data-fragment-index="4" -->
 
+            2 clients c'est trop court m'en faudrait au moins 5 de plus pour jouer 🥹  <!-- .element: class="fragment" data-fragment-index="5" -->
+
+            Demander à Copilot "ajoute 5 clients de plus dans ce fichier"  <!-- .element: class="fragment" data-fragment-index="6" -->
+
+            Tadaaa 🥳 ! <!-- .element: class="fragment" data-fragment-index="7" -->
           </textarea>
         </section>
 
         <section data-markdown>
           <textarea data-template>
-            ## Création fonctions exports nommés
+            ## CRÉATION FONCTIONS EXPORTS NOMMÉS
 
-            ### Prompt :
+            Attention, ça se corse ! On ajoute un soupçon de contexte 🧐 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-            écrit une fonction sum, une fonction multiply, une fonction divide et exporte les trois fonctions via export fonction de façon nommée
+            Prompt : "écrit une fonction sum, une fonction multiply, une fonction divide et exporte les trois fonctions via export fonction de façon nommée" <!-- .element: class="fragment" data-fragment-index="2" -->
 
-            Demander à Copilot ⌘ + i  <br/>fichier math.js <!-- .element: class="fragment" data-fragment-index="1" -->
+            <small>copilot-live/lambda-fn/1.2_math.js</small> <!-- .element: class="fragment" data-fragment-index="3" -->
+
+            Demander à Copilot ⌘ + i  <!-- .element: class="fragment" data-fragment-index="4" -->
+
+            Next… le contexte  <!-- .element: class="fragment" data-fragment-index="5" -->
           </textarea>
         </section>
 
@@ -133,20 +176,22 @@
           <textarea data-template>
             ## Demander à Copilot d'importer des modules qui ne sont pas dans le dossier courant
 
-            Copilot en tant qu'IA ne peut pas accéder à des fichiers qui ne sont pas dans le dossier courant. Cependant, vous pouvez lui demander d'importer des modules qui ne sont pas dans le dossier courant en lui fournissant le chemin relatif du fichier.
+            Copilot en tant qu'IA ne peut pas accéder à des fichiers qui ne sont pas dans le dossier courant. Cependant, vous pouvez lui demander d'importer des modules hors du dossier courant en lui fournissant le chemin relatif du fichier.  <!-- .element: class="fragment" data-fragment-index="1" -->
 
-            Demander à Copilot ⌘ + i : <!-- .element: class="fragment" data-fragment-index="1" -->
+            Prompt : "importe sum, multiply, divide depuis le fichier lambda-fn/math.js et utilise les"<br/><br/> <!-- .element: class="fragment" data-fragment-index="3" -->
+            Demander à Copilot ⌘ + i <br/> <small>copilot-live/1.3_useImport.js</small> <!-- .element: class="fragment" data-fragment-index="3" -->
 
-            importer sum, multiply, divide depuis le fichier lambda-fn/math.js et utilise les chacune <br/> fichier useImport.js  <!-- .element: class="fragment" data-fragment-index="2" -->
+
           </textarea>
         </section>
 
         <section data-markdown>
           <textarea data-template>
             ## Accepter les suggestions
+            <small>copilot-live/1.4_accept.js</small><br/> <!-- .element: class="fragment" data-fragment-index="1" -->
 
-            Accepter toute la ligne de suggestion en appuyant sur la touche ⇥ <!-- .element: class="fragment" data-fragment-index="1" -->
-
+            Commencer à écrire "fun" pour déclencher la suggestion<br/>
+            Accepter toute la ligne de suggestion en appuyant sur la touche tabulation ⇥<br/>
             Accepter la suggestion mot par mot en appuyant sur la touche ⌘ + → <!-- .element: class="fragment" data-fragment-index="2" -->
             </textarea>
         </section>
@@ -159,7 +204,13 @@
 
             Par contre bonne nouvelle il voit les fichier ouverts 🥳 <!-- .element: class="fragment" data-fragment-index="2" -->
 
-            On test ? fichier price.ts + price.type.ts <!-- .element: class="fragment" data-fragment-index="3" -->
+            On test ? <!-- .element: class="fragment" data-fragment-index="4" -->
+
+            <small>
+              copilot-live/[1.5.1_price.ts, 1.5.2_price.type.ts]<br/>
+              éxecuter le code 1.5.1_price.ts avec node & typescript : tsx 1.5.1_price.ts
+            </small> <!-- .element: class="fragment" data-fragment-index="4" -->
+
             </textarea>
         </section>
 
@@ -181,6 +232,8 @@
             # update
             brew upgrade gh
             ```
+
+            <small>Pour la démo ça se passe dans la console →<br/> ```gh copilot explain "sudo apt-get"```</small>
 
           </textarea>
         </section>
@@ -207,7 +260,7 @@
     Reveal.initialize({
       hash: true,
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       width: 1710,
       height: 1107,
     });
